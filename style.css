@@ -1,11 +1,10 @@
 body {
-   font-family: 'Space Grotesk', sans-serif;
+   font-family: "Space Grotesk", sans-serif;
 }
 
 html {
    scroll-behavior: smooth;
 }
-
 
 .icon-hover {
    transition: 0.2s ease;
@@ -28,8 +27,8 @@ html {
    display: flex;
    justify-content: center;
    align-items: center;
-   border: 2px solid #F55636;
-   color: #F55636;
+   border: 2px solid #f55636;
+   color: #f55636;
    background-color: transparent;
    opacity: 0;
    pointer-events: none;
@@ -40,7 +39,7 @@ html {
 }
 
 .scroll-btn:hover {
-   background-color: #F55636;
+   background-color: #f55636;
    color: white;
    transform: scale(1.1);
 }
@@ -53,4 +52,39 @@ html {
 .scroll-btn.show {
    opacity: 1;
    pointer-events: auto;
+}
+
+/* Mobile menu animation */
+@keyframes slide-down {
+   from {
+      opacity: 0;
+      transform: translateY(-10px);
+   }
+
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+.animate-slide-down {
+   animation: slide-down 0.3s ease;
+}
+
+/* Hamburger menu active state animation */
+.hamburger-line {
+   transform-origin: center;
+   transition: all 0.3s ease;
+}
+
+#mobileMenuBtn.active .hamburger-line:nth-child(1) {
+   transform: rotate(45deg) translate(10px, 10px);
+}
+
+#mobileMenuBtn.active .hamburger-line:nth-child(2) {
+   opacity: 0;
+}
+
+#mobileMenuBtn.active .hamburger-line:nth-child(3) {
+   transform: rotate(-45deg) translate(7px, -7px);
 }

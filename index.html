@@ -16,48 +16,73 @@
 
 <body class="bg-[#FDFCF4] text-[#0E0E0E] max-w-7xl mx-auto">
 
+   <!-- Updated header with responsive hamburger menu for mobile -->
    <header
-      class="sticky top-0 z-50 backdrop-blur-lg bg-[#FDFCF4]/80 flex justify-between items-center px-10 py-6 text-sm">
+      class="sticky top-0 z-50 backdrop-blur-lg bg-[#FDFCF4]/80 flex justify-between items-center px-6 md:px-10 py-6 text-sm">
       <div>
          <img src="image/rafifmmr-logomark.svg" alt="Monolog Logo" class="h-10 w-auto" />
       </div>
 
-      <nav class="flex gap-6">
-         <a href="#home" class="hover:text-[#F55636]">Home</a>
-         <a href="#about" class="hover:text-[#F55636]">About</a>
-         <a href="#stack" class="hover:text-[#F55636]">Stack</a>
-         <a href="#services" class="hover:text-[#F55636]">Services</a>
-         <a href="#contact" class="hover:text-[#F55636]">Contact</a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex gap-6">
+         <a href="#home" class="hover:text-[#F55636] transition">Home</a>
+         <a href="#about" class="hover:text-[#F55636] transition">About</a>
+         <a href="#stack" class="hover:text-[#F55636] transition">Stack</a>
+         <a href="#services" class="hover:text-[#F55636] transition">Services</a>
+         <a href="#contact" class="hover:text-[#F55636] transition">Contact</a>
       </nav>
 
-      <a href="https://wa.me/62881027871832" target="_blank">
+      <!-- Desktop Button -->
+      <a href="https://wa.me/62881027871832" target="_blank" class="hidden md:block">
          <button
             class="border border-[#0E0E0E] px-6 py-3 text-sm font-semibold hover:bg-[#0E0E0E] hover:text-[#FDFCF4] transition-all">
             Chat with me
          </button>
       </a>
 
+      <!-- Mobile Hamburger Menu Button with SVG Icon -->
+      <button id="mobileMenuBtn" class="md:hidden flex items-center justify-center w-8 h-8 cursor-pointer">
+         <!-- replaced HTML lines with SVG icon image that toggles between menu and x -->
+         <img id="menuIcon" src="image/menu.svg"Menu" class="w-6 h-6" />
+      </button>
+
    </header>
 
-   <section id="home" class="px-10 pt-24 pb-28 max-w-4xl mx-auto text-center">
+   <!-- Mobile Navigation Menu -->
+   <nav id="mobileMenu"
+      class="hidden md:hidden fixed top-[88px] left-0 right-0 bg-[#FDFCF4] border-b border-[#0E0E0E]/10 flex flex-col gap-0 z-40 animate-slide-down">
+      <a href="#home" class="px-6 py-4 border-b border-[#0E0E0E]/10 hover:bg-[#F55636] hover:text-white transition">Home</a>
+      <a href="#about" class="px-6 py-4 border-b border-[#0E0E0E]/10 hover:bg-[#F55636] hover:text-white transition">About</a>
+      <a href="#stack" class="px-6 py-4 border-b border-[#0E0E0E]/10 hover:bg-[#F55636] hover:text-white transition">Stack</a>
+      <a href="#services" class="px-6 py-4 border-b border-[#0E0E0E]/10 hover:bg-[#F55636] hover:text-white transition">Services</a>
+      <a href="#contact" class="px-6 py-4 border-b border-[#0E0E0E]/10 hover:bg-[#F55636] hover:text-white transition">Contact</a>
+      <a href="https://wa.me/62881027871832" target="_blank" class="px-6 py-4">
+         <button
+            class="w-full border border-[#0E0E0E] px-6 py-3 text-sm font-semibold hover:bg-[#0E0E0E] hover:text-[#FDFCF4] transition-all">
+            Chat with me
+         </button>
+      </a>
+   </nav>
+
+   <section id="home" class="px-6 md:px-10 pt-24 pb-28 max-w-4xl mx-auto text-center">
       <h1 class="text-xl md:text-5xl font-bold leading-none tracking-tight mb-6">
-         <span class="block">Hi, I’m Rafif</span>
+         <span class="block">Hi, I'm Rafif</span>
          <span class="block mt-2 text-[#F55636]">Frontend Developer & UI/UX Designer</span>
       </h1>
-      <p class="text-lg opacity-80 leading-relaxed mx-auto max-w-2xl">
+      <p class="text-base md:text-lg opacity-80 leading-relaxed mx-auto max-w-2xl">
          I build clean, modern, and high performing digital products especially in Web3, crypto, and tech.
          With a bold modern brutalism approach, I focus on making designs that are fast, intuitive, and visually
          striking.
       </p>
    </section>
 
-   <section id="about" class="px-10 pt-24 pb-24 max-w-4xl mx-auto">
+   <section id="about" class="px-6 md:px-10 pt-24 pb-24 max-w-4xl mx-auto">
       <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">About Me</h2>
       <p class="text-base md:text-lg opacity-80 leading-relaxed mx-auto max-w-3xl text-center">
-         Hello, World! I’m Rafif, a hybrid Frontend Developer & UI/UX Designer passionate about building intuitive,
+         Hello, World! I'm Rafif, a hybrid Frontend Developer & UI/UX Designer passionate about building intuitive,
          fast, and modern digital experiences.
          <br><br>
-         Since 2022, I’ve been crafting web interfaces using React, Next.js, and Tailwind CSS, while also designing
+         Since 2022, I've been crafting web interfaces using React, Next.js, and Tailwind CSS, while also designing
          seamless user journeys with Figma. I recently started exploring Rust and enjoy combining code with design.
          <br><br>
          Beyond work, I enjoy diving into new technologies, writing blogs, experimenting with ideas (stay tuned for
@@ -66,7 +91,7 @@
       </p>
    </section>
 
-   <section id="stack" class="px-10 pt-24 pb-20 text-center">
+   <section id="stack" class="px-6 md:px-10 pt-24 pb-20 text-center">
       <h2 class="text-3xl font-semibold mb-10">Stack</h2>
 
       <div class="flex flex-wrap justify-center items-center gap-10">
@@ -131,7 +156,7 @@
       </div>
    </section>
 
-   <section id="services" class="px-10 pt-24 pb-20 max-w-6xl mx-auto text-center">
+   <section id="services" class="px-6 md:px-10 pt-24 pb-20 max-w-6xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-12">Services / What I Offer</h2>
 
       <div class="flex flex-wrap -mx-4 justify-center">
@@ -187,20 +212,20 @@
    </section>
 
 
-   <section id="fun" class="px-10 pt-24 pb-20 max-w-4xl mx-auto text-center">
+   <section id="fun" class="px-6 md:px-10 pt-24 pb-20 max-w-4xl mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold mb-10">Fun / Hobbies</h2>
 
       <p class="text-base md:text-lg opacity-80 leading-relaxed mx-auto max-w-3xl">
-         When I’m not coding or designing, I enjoy exploring new technologies, trading & farming in the crypto world,
-         experimenting with AI projects, and finding creative ways to mix code and design. It’s all about learning,
+         When I'm not coding or designing, I enjoy exploring new technologies, trading & farming in the crypto world,
+         experimenting with AI projects, and finding creative ways to mix code and design. It's all about learning,
          building,
          and having fun along the way! 🚀
       </p>
    </section>
 
 
-   <section id="contact" class="px-10 pt-24 pb-20 max-w-3xl mx-auto text-center">
-      <h3 class="text-4xl font-bold mb-4">Let’s Build Something Together</h3>
+   <section id="contact" class="px-6 md:px-10 pt-24 pb-20 max-w-3xl mx-auto text-center">
+      <h3 class="text-4xl font-bold mb-4">Let's Build Something Together</h3>
       <p class="text-sm opacity-70 leading-relaxed mb-6 mx-auto max-w-xl">
          Butuh website modern, UI/UX yang solid, atau landing page high-converting? Aku siap bantu.
          Mari buat project yang standout dan impactful.
@@ -211,7 +236,7 @@
       </button>
    </section>
 
-   <footer class="border-t border-black/20 py-8 text-center text-sm opacity-80">
+   <footer class="border-t border-black/20 py-8 text-center text-sm opacity-80 px-6 md:px-10">
       <div class="flex justify-center gap-6 mb-4">
          <a href="https://instagram.com/_rafifmmr" target="_blank">
             <img src="image/instagram.svg" alt="Instagram" class="w-6 h-6 icon-hover" />
