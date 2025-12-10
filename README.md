@@ -2,7 +2,7 @@
 
 RafifMMR-Submission-Project-Aksademy
 
-Selamat datang di **Dark Portfolio**!  
+Selamat datang di **RafifMMR Portfolio**!  
 Ini adalah proyek tugas yang menampilkan portofolio seorang Frontend Developer & UI/UX Designer dengan pendekatan **modern brutalism**, clean UI, dan integrasi stack terbaru.
 
 ---
@@ -42,7 +42,7 @@ Ini adalah proyek tugas yang menampilkan portofolio seorang Frontend Developer &
 1. Clone repository ini:
 
    ```bash
-   git clone https://github.com/username/dark-portfolio.git
+   git clone https://github.com/RafifMMR/RafifMMR-Submission-Project-Aksademy.git
 
    ```
 
