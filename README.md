@@ -10,7 +10,7 @@ Ini adalah proyek tugas yang menampilkan portofolio seorang Frontend Developer &
 ## 🌟 Fitur Utama
 
 - **Responsif & Clean Layout**  
-  Menggunakan Tailwind CSS dan Google Font *Space Grotesk* untuk tampilan modern, minimalis, dan profesional.
+  Menggunakan Tailwind CSS dan Google Font _Space Grotesk_ untuk tampilan modern, minimalis, dan profesional.
 
 - **Smooth Scroll & Navigation**  
   Navbar dengan scroll smooth antar section: Home, About, Contact.
@@ -28,27 +28,23 @@ Ini adalah proyek tugas yang menampilkan portofolio seorang Frontend Developer &
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript, Tailwind CSS  
-- **Design & UX:** Figma, modern brutalism approach  
-- **Fonts:** Space Grotesk (Google Fonts)  
+- **Frontend:** HTML, CSS, JavaScript, Tailwind CSS
+- **Design & UX:** Figma, modern brutalism approach
+- **Fonts:** Space Grotesk (Google Fonts)
 - **Features:** Smooth scroll, hover & active effects, responsive layout
 
 ---
-
-## 📂 Struktur Project
-├─ index.html # Halaman utama
-├─ style.css # Styling custom
-├─ script.js # Script interaktif (scroll-to-top, tombol WA)
-└─ image/ # Logo & icon sosial media
-
 
 ---
 
 ## 🚀 Cara Menjalankan
 
 1. Clone repository ini:
+
    ```bash
    git clone https://github.com/username/dark-portfolio.git
+
+   ```
 
 2. Buka file index.html di browser favoritmu.
 
@@ -56,7 +52,7 @@ Ini adalah proyek tugas yang menampilkan portofolio seorang Frontend Developer &
 
 ## Kontak
 
-Instagram: @_rafifmmr
+Instagram: @\_rafifmmr
 
 LinkedIn: Rafif Muhammad MR
 
